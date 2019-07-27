@@ -1,7 +1,7 @@
 # React Sandbox
 
-Playground for prototyping. Branches represent each different prototype. 
-Use master as a basic skeleton. 
+Playground for prototyping. Branches represent each different prototype.
+Use master as a basic skeleton.
 
 ## Installation
 
@@ -25,11 +25,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser if
 
 ```bash
 npm test
+# or
+CI=true npm test
 ```
 
 ## Deployment
 
-```bash 
+```bash
 npm run build
 ```
 
