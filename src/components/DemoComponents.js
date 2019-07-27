@@ -6,7 +6,9 @@ import React, { Component } from "react";
  */
 function FunctionalComponent(props) {
   return (
-    <div>Functional component with msg: {props.msg}</div>
+    <div className="DemoComponent">
+      <h1>Functional component with msg: {props.msg}</h1>
+    </div>
   );
 }
 
@@ -24,15 +26,18 @@ class ClassComponent extends Component {
   }
 
   render() {
-      return (
-          <div>Class component with state: {this.state.expanded}</div>
-      );
+    return (
+      <div onClick={() => this.click()}>
+          <h1>Class component with state. Click me! {this.state.expanded}</h1>
+          {this.state.expanded && <p>Boo!</p>}
+      </div>
+    );
   }
 
   click() {
-      this.setState(prevState => ({ expanded: !prevState.expanded }));
+    this.setState(prevState => ({ expanded: !prevState.expanded }));
   }
 }
 
-export {FunctionalComponent};
-export {ClassComponent}
+export { FunctionalComponent };
+export { ClassComponent };

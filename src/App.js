@@ -15,8 +15,8 @@ function App() {
       </header>
 
       <section>
-        <FunctionalComponent></FunctionalComponent>
-        <ClassComponent></ClassComponent>
+        <FunctionalComponent msg="boo!"/>
+        <ClassComponent msg="world"/>
       </section>
     </div>
   );

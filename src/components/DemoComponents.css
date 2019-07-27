@@ -1,0 +1,10 @@
+.DemoComponent {
+  text-align: center;
+}
+
+.DemoComponent-section{
+  min-height: 10vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
