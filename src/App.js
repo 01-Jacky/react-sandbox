@@ -2,7 +2,11 @@ import React from "react";
 import logo from "./assets/images/logo.svg";
 import "./App.css";
 
-import {FunctionalComponent, ClassComponent} from './components/DemoComponents'
+import {
+  FunctionalComponent,
+  ClassComponent,
+  FunctionalComponentWithHooks}
+from './components/DemoComponents'
 
 
 function App() {
@@ -17,6 +21,7 @@ function App() {
       <section>
         <FunctionalComponent msg="boo!"/>
         <ClassComponent msg="world"/>
+        <FunctionalComponentWithHooks/>
       </section>
     </div>
   );
