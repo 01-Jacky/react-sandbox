@@ -1,0 +1,12 @@
+.Company {
+  /* text-align: center; */
+  border: solid;
+  margin: 0.5em 3em;
+  min-width: 25em;
+}
+
+.Basket-section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
