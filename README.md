@@ -1,7 +1,6 @@
 # React Sandbox
 
-Playground for prototyping. Branches represent each different prototype.
-Use master as a basic skeleton.
+Final Project for SMC JS classs
 
 ## Installation
 

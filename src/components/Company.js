@@ -3,27 +3,44 @@ import "./Company.css"
 
 
 class Company extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expanded: false
-    };
-  }
-
   render() {
     let company = this.props.company;
 
     return (
       <div className="Company">
-        <h3> {company.companyName}</h3>
-        <h3> {company.position}</h3>
-        {!company.applied &&
+        <div>
           <button
+            className="Company-delete"
             type="button"
-            onClick={() => this.props.onClick(company.id)}
+            onClick={() => this.props.onClickDelete(company.id)}
           >
-          Finished Applying
-          </button>}
+          ❌
+        </button>
+        </div>
+
+        <h3 className="Company-name"> {company.companyName}</h3>
+        <h3> {company.position}</h3>
+
+        {/* Applied Button */}
+        {!company.applied &&
+          <div>
+            <button type="button" onClick={() => this.props.onClickAdd(company.id)}>
+              I applied!
+            </button>
+          </div>
+        }
+
+        {/* Accepted Button */}
+        {company.waitForResponse &&
+          <div>
+          <button type="button" onClick={() => this.props.onClickOffer(company.id)}>
+            Accepted
+          </button>
+          <button type="button" onClick={() => this.props.onClickReject(company.id)}>
+            Rejected
+          </button>
+          </div>
+        }
       </div>
     );
   }

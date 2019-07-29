@@ -5,8 +5,11 @@
   min-width: 25em;
 }
 
-.Basket-section{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.Company-name{
+  margin-top: 1.2em;
+}
+
+.Company-delete{
+  float: right;
+  font-size: .3em;
 }
